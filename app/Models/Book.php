@@ -18,6 +18,6 @@ class Book extends Model
     }
     public function tags()
     {
-        return $this->belongsToMany(Tag::class, 'book_has_tag');
+        return $this->belongsToMany(Tag::class, 'books_has_tags');
     }
 }
